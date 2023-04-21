@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pk-metek</title>
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-top">
+        <div class="container">
+          <div class="header-main">
+            <div class="header-main__left">
+              <a href="#" class="logo">
+                <img class="logo-img" src="/img/logo.svg" alt="logo" />
+              </a>
+              <div class="header-main__description">
+                <p>Обработка листового металла</p>
+                <p>Иркутск, ул. Ракитная, 22</p>
+              </div>
+            </div>
+
+            <div class="header-main__right">
+              <div class="header-main__phones">
+                <p class="main-phone">+7 (3952) 50-00-70</p>
+                <p class="main-description">Будни с 09:00 до 18:00</p>
+              </div>
+              <div class="header-main__emails">
+                <p class="main-email">info@zavod-metek.ru</p>
+                <p class="main-description">По общим вопросам</p>
+              </div>
+              <div class="header-main__btn">
+                <a href="#contact" class="btn goto btn--callback"
+                  >Заказать звонок</a
+                >
+              </div>
+            </div>
+            <!-- <button class="btn btn--icon menu-btn">
+            <span class="menu-btn__icon"></span>
+          </button> -->
+          </div>
+        </div>
+      </div>
+
+      <div class="header-bottom">
+        <div class="container">
+          <div class="header-main__nav">
+            <nav class="nav-menu">
+              <a href="#services" class="nav-menu__link goto">О компании</a>
+              <a href="#about" class="nav-menu__link goto">Продукция</a>
+              <a href="#stages" class="nav-menu__link goto">Услуги</a>
+              <a href="#stages" class="nav-menu__link goto">Проекты</a>
+              <a href="#contact" class="nav-menu__link goto">Контакты</a>
+            </nav>
+            <div class="header-main__btn">
+              <form class="header-main__form">
+                <input class="header-search-input" 
+                placeholder="Поиск"
+                type="text">
+                <div class="header-search-img">
+                  <img src="/img/search.svg" alt="search">
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="intro" style="background-image: url(/img/intro.png)">
+        <div class="container">
+          <div class="intro-content">
+            <p class="intro-name">завод «метек»</p>
+            <h1 class="intro-title">
+              Высококачественная металлообработка в Иркутске
+            </h1>
+
+            <div class="intro-btn">
+              <a href="#contact" class="btn goto btn--callback"
+                >Получить бесплатный расчет материалов</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- <section class="info" id="services">
+        <div class="container">
+          <h2 class="info-title">
+            Предлагаем комплексное транспортное решение для любой компании
+          </h2>
+          <p class="info-subtitle text-subtitle">
+            Продажа коммерческой и спецтехники из стран СНГ: берём на себя
+            все этапы поставки
+          </p>
+          <div class="info-elements">
+            <div class="info-element">
+              <img class="info-element__img" src="/img/info1.svg" alt="info1" />
+              <p class="info-element__title">Поиск, подбор, поставка техники</p>
+              <p class="info-element__description">
+                Поручите задачу нам – специалисты ООО «РМГ» найдут нужный
+                транспорт в России, СНГ или других странах Европы.
+              </p>
+            </div>
+
+            <div class="info-element">
+              <img class="info-element__img" src="/img/info2.svg" alt="info2" />
+              <p class="info-element__title">
+                Юридическая и техническая проверка техники
+              </p>
+              <p class="info-element__description">
+                Доверьте оценку транспорта профессионалам – найдем автомобиль,
+                который полностью соответствует вашему техническому заданию.
+              </p>
+            </div>
+
+            <div class="info-element">
+              <img class="info-element__img" src="/img/info3.svg" alt="info3" />
+              <p class="info-element__title">Валютные взаиморасчеты</p>
+              <p class="info-element__description">
+                Вам не придется самостоятельно проводить процедуру валютных
+                операций – наши специалисты сделают это за вас.
+              </p>
+            </div>
+
+            <div class="info-element">
+              <img class="info-element__img" src="/img/info4.svg" alt="info4" />
+              <p class="info-element__title">Организация логистики</p>
+              <p class="info-element__description">
+                Полностью выполняем комплекс задач, связанный с транспортировкой
+                техники.
+              </p>
+            </div>
+
+            <div class="info-element">
+              <img class="info-element__img" src="/img/info5.svg" alt="info5" />
+              <p class="info-element__title">
+                Оценка соответствия техническому регламенту РФ
+              </p>
+              <p class="info-element__description">
+                Доверьте поставку грузовой и спецтехники ООО «РМГ» – наши
+                специалисты позаботятся о том, чтобы транспорт подходил под
+                требования законодательства и тех регламента.
+              </p>
+            </div>
+
+            <div class="info-element">
+              <img class="info-element__img" src="/img/info6.svg" alt="info6" />
+              <p class="info-element__title">«ЭРА-ГЛОНАСС»</p>
+              <p class="info-element__description">
+                Автоматизированная информационная система экстренного
+                реаги-рования при авариях. Транспортные средства должны
+                оснащаться таким устройством как дополнительным элементом для
+                того, чтобы автомобиль получил возможность быть растаможенным.
+              </p>
+            </div>
+
+            <div class="info-element">
+              <img class="info-element__img" src="/img/info7.svg" alt="info7" />
+              <p class="info-element__title">Таможенное оформление</p>
+              <p class="info-element__description">
+                Поручите нам сопровождение всех процессов, которые совершаются
+                при поставке техники из стран Европы и СНГ.
+              </p>
+            </div>
+
+            <div class="info-element">
+              <img
+                class="info-element__img info-element__img--car"
+                src="/img/info-car.png"
+                alt="car"
+              />
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+      <!-- <section class="about" id="about">
+        <div class="container">
+          <h2 class="about-title">
+            Доверьте поставку коммерческого транспорта квалифицированным
+            специалистам
+          </h2>
+          <div class="about-content">
+            <div class="about-info">
+              <p class="about-info__subtitle text-subtitle">О компании «РМГ»</p>
+              <div class="wswg">
+                <p>
+                  Осуществляем поставки коммерческого транспорта для решения
+                  различных задач:
+                </p>
+
+                <ul>
+                  <li>магистральных перевозок: тягачи 4х2, 6х2;</li>
+                  <li>
+                    строительной отрасли: тягачи 6х4, самосвалы 6х4, 6х6, 8х4;
+                  </li>
+                  <li>
+                    горнодобывающей сферы: самосвалы 6х6, 8х4,
+                    шарнирно-сочленённые самосвалы;
+                  </li>
+                  <li>лесной промышленности: лесовозы;</li>
+                  <li>автобусы: корпоративные, маршрутные, туристические.</li>
+                </ul>
+
+                <p>
+                  Продаём технику отечественного и европейского производства.
+                  Работаем с импортным и экспортным оборудованием.
+                </p>
+                <p>
+                  Благодаря многолетнему опыту — более 10 лет в данной сфере —
+                  специалисты ООО «РМГ» могут решить задачу любой сложности
+                  в максимально короткие сроки.
+                </p>
+              </div>
+            </div>
+            <div class="about-img">
+              <img
+                class="about-img__car"
+                src="/img/about-car.png"
+                alt="about-car"
+              />
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+      <!-- <section class="tradein" style="background-image: url(/img/tradeIn.png)">
+        <div class="tradein-content">
+          <div class="container">
+            <div class="tradein-info">
+              <h2 class="tradein-title">Предлагаем программу трейд-ин</h2>
+              <p class="tradein-subtitle text-subtitle">
+                Программа трейд-ин позволяет значительно ускорить покупку новой
+                техники
+              </p>
+              <div class="wswg">
+                <p>
+                  Обменяйте коммерческий транспорт бывший в употреблении
+                  на новую технику с доплатой. Цена б/у машины пойдёт в зачёт
+                  стоимости приобретённой модели. Размер скидки зависит
+                  от его состояния, марки и технических характеристик. Детали
+                  уточняйте у персонального менеджера
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+      <!-- <section class="delivery" id="stages">
+        <div class="container">
+          <h2 class="delivery-title">
+            Профессиональная поставка коммерческого транспорта в 4 этапа*
+          </h2>
+          <p class="delivery-subtitle text-subtitle">
+            Оформление ПТС и ЭПТС включено
+          </p>
+          <div class="delivery-elements">
+            <div class="delivery-elements__underline"></div>
+            <div class="delivery-elements__flex">
+              <div class="delivery-element">
+                <div class="delivery-element__number">1</div>
+                <div class="delivery-element__point"></div>
+                <div class="delivery-element__description">
+                  <span class="description-bold"
+                    >Предоставьте техническое задание</span
+                  >
+                  с указанием марки, модели и особенностями требуемого
+                  транспорта – учтем каждую деталь.
+                </div>
+              </div>
+
+              <div class="delivery-element">
+                <div class="delivery-element__number">2</div>
+                <div class="delivery-element__point"></div>
+                <div class="delivery-element__description">
+                  <span class="description-bold"
+                    >Наши специалисты ищут коммерческий транспорт</span
+                  >
+                  по нужным параметрам в России, СНГ и другим европейским
+                  странам – срок от 3 рабочих дней.
+                </div>
+              </div>
+
+              <div class="delivery-element">
+                <div class="delivery-element__number">3</div>
+                <div class="delivery-element__point"></div>
+                <div class="delivery-element__description">
+                  <span class="description-bold"
+                    >Получите КП и заключите договор</span
+                  >
+                  на поставку грузовой или спецтехники. В документах будут
+                  указаны сроки выполнения работы.
+                </div>
+              </div>
+
+              <div class="delivery-element">
+                <div class="delivery-element__number">4</div>
+                <div class="delivery-element__point"></div>
+                <div class="delivery-element__description">
+                  <span class="description-bold">Ожидайте доставку</span>
+                  коммерческого транспорта по указанному адресу – все заботы,
+                  связанные с оформлением документов и логистикой, берем на
+                  себя.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="delivery-bottom">
+            <p class="delivery-bottom__description">
+              *На каждом этапе сделки с вами на связи будет персональный
+              менеджер, который ответит на все интересующие вопросы
+              и проконсультирует в случае необходимости.
+            </p>
+          </div>
+        </div>
+      </section> -->
+
+      <!-- <section class="map" id="contact">
+        <div class="container">
+          <div class="map-content">
+            <div class="map-iframe">
+               <div class="iframe-info">
+                <p class="iframe-info--title">ООО «РМГ»</p>
+                <p class="iframe-info--description">
+                  Москва, ул. Авангардная дом 3, помещение II, этаж 4, офис 1409
+                </p>
+              </div>
+              <div class="iframe-map">
+                <iframe
+                src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae1c7d001af8af6a9735af77c201177e604cf6dc7acf6e821f026d1fc8ebdbf5d&amp;source=constructor"
+                width="100%"
+                height="100%"
+                frameborder="0"
+              ></iframe>
+              </div>
+              
+             
+            </div>
+            <div class="map-info">
+              <h2 class="map-title">
+                Свяжитесь с нами и получите бесплатную консультацию
+              </h2>
+              <form class="form">
+                <div class="form-row">
+                  <div class="form-group">
+                    <label class="form-field" for="input-name">
+                      <span class="form-span">Ваше имя</span>
+                      <input
+                        class="form-input"
+                        id="input-name"
+                        type="text"
+                        placeholder="Алексей"
+                        required
+                      />
+                    </label>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-field" for="input-phone">
+                      <span class="form-span">Телефон</span>
+                      <input
+                        class="form-input phone-mask"
+                        id="input-phone"
+                        type="tel"
+                        placeholder="+7 (___) ___-__-__"
+                        required
+                      />
+                    </label>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-field" for="input-comments">
+                    <span class="form-span">Комментарий</span>
+                    <textarea
+                      class="form-input form-textarea"
+                      id="input-comments"
+                      placeholder="Добрый день, мне нужно 15 автомобилей марки"
+                    ></textarea>
+                  </label>
+                </div>
+
+                <div class="form-group">
+                  <label class="check">
+                    <input class="check__input" type="checkbox" required />
+                    <span class="check__label"
+                      >Я разрешаю обработку персональных данных</span
+                    >
+                  </label>
+                </div>
+
+                <div class="map-btn">
+                  <button class="btn btn--request btn--request-white">
+                    Оставить заявку
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section> -->
+    </main>
+
+    <!-- <footer class="footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer__btn">
+            <a href="#contact" class="btn goto btn--callback"
+              >Обратный звонок</a
+            >
+          </div>
+          <div class="footer-email">
+            <p class="footer-email--top">Электронная почта</p>
+            <a href="mailto:info@rmg-trucks.ru" class="footer-email--bottom"
+              >info@rmg-trucks.ru</a
+            >
+          </div>
+          <div class="footer-adress">
+            125493 Москва, ул. Авангардная дом 3, помещение II, этаж 4, офис
+            1409
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p class="copyright">© 2022 «РМГ»</p>
+          <a href="#" class="confidentiality">Политика конфиденциальности</a>
+          <a href="https://1ps.ru/" target="_blank" class="author"
+            >Разработка: 1PS.RU</a
+          >
+        </div>
+      </div>
+    </footer> -->
+
+    <script src="./js/vendor/jquery-3.1.1.min.js"></script>
+    <script src="./js/vendor/jquery.inputmask.min.js"></script>
+    <script src="./js/vendor/inputmask.min.js"></script>
+    <script src="./js/scripts.js"></script>
+  </body>
+</html>

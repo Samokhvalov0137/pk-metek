@@ -1,3 +1,26 @@
+new Swiper('.project-swiper', {
+  loop: true,
+  spaceBetween: 20,
+  slidesPerView: 3.2,
+  breakpoints: {
+    // when window width is >= 0px
+    0: {
+      slidesPerView: 1,
+      spaceBetween: 30
+    },
+    425: {
+      slidesPerView: 2,
+      spaceBetween: 20
+    },
+    725: {
+      slidesPerView: 3,
+      spaceBetween: 20
+    }
+  },
+  autoplay: {
+    delay: 3000,
+  },});
+
 $(document).ready(function () {
   // переменные
   let scrollPos = 0;

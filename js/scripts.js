@@ -21,6 +21,8 @@ new Swiper('.project-swiper', {
     delay: 3000,
   },});
 
+
+
 $(document).ready(function () {
   // переменные
   let scrollPos = 0;

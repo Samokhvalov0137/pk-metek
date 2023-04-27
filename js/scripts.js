@@ -29,6 +29,8 @@ $(document).ready(function () {
   let menu = $(".nav-menu"),
     menuHeight = menu.outerHeight();
 
+
+
   //скрытие и отображение блока header при скролле
   $(window).scroll(function () {
     let height_mh = $(".header").outerHeight();
@@ -52,6 +54,14 @@ $(document).ready(function () {
       }
     }
   });
+
+
+
+  // открытие попапа
+
+  $('.popup').magnificPopup({
+    type: 'inline'
+});
 
   // скрытие блока меню навигации при клике вне
   $(document).mouseup(function (e) {

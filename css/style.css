@@ -1127,6 +1127,172 @@ text-decoration: underline;
 .confidentiality:hover{
   text-decoration: underline;
 }
+
+
+
+
+
+
+.mfp-bg {
+  background: #1D1E39;
+}
+
+.mfp-container {
+  padding: 15px;
+}
+
+.mfp-close {
+  width: 24px;
+  height: 24px;
+  font-size: 0;
+  opacity: 1;
+}
+.mfp-close::before, .mfp-close::after {
+  content: "";
+  width: 20px;
+  height: 2px;
+  border-radius: 1px;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.mfp-close::before {
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+      -ms-transform: translate(-50%, -50%) rotate(45deg);
+          transform: translate(-50%, -50%) rotate(45deg);
+}
+.mfp-close::after {
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+      -ms-transform: translate(-50%, -50%) rotate(-45deg);
+          transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.modal {
+  position: relative;
+  max-width: 522px;
+  padding: 50px;
+  background-color: #fff;
+  margin: 32px auto 0;
+}
+
+
+.modal__title {
+  font-family: 'Soniano Sans Unicode';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 54px;
+  line-height: 95%;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 20px;
+}
+.modal--wide {
+  max-width: 1180px;
+  background: #F3F5FA;
+}
+
+.modal .mfp-close {
+  top: -32px;
+}
+
+
+
+
+
+.popup-input {
+  border: 0;
+  width: 100%;
+  height: 60px;
+  background: transparent;
+  outline: none;
+
+  padding: 20px 24px 0 0;
+  border-bottom: 1px solid #AAAAAA;
+  height: 72px;
+
+
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 17px;
+line-height: 21px;
+text-transform: uppercase;
+color: #000000;
+
+}
+
+
+.textbox {
+  position: relative;
+  margin-bottom: 16px;
+}
+
+
+/* .textbox input {
+  padding: 20px 24px 0 0;
+  border-bottom: 1px solid #AAAAAA;
+  color: #000000;
+  height: 72px;
+} */
+
+:is(.focus-input:focus) ~ label {
+  transform: translateY(-20px);
+  /* scale: 0.875; */
+}
+
+.popup-input:hover {
+  border-color: #000000;
+}
+
+/* .popup-input:focus ~ label {
+  color: #216ce7;
+} */
+
+.popup-input:focus {
+  border-color: #000000;
+}
+
+
+.textbox label {
+  position: absolute;
+  bottom: 10px;
+  left: 0px;
+  translate: 0 -50%;
+  color: #AAAAAA;;
+  pointer-events: none;
+  transition: 0.4s;
+}
+
+textarea {
+  resize: none;
+}
+
+.popup-textarea{
+margin-top: 20px;
+}
+
+.popup-textarea textarea{
+  height: 170px;
+  padding-top: 20px;
+}
+
+.popup-textarea label {
+  position: absolute;
+  top: 55px;
+  left: 0px;
+  translate: 0 -50%;
+  color: #AAAAAA;;
+  pointer-events: none;
+  transition: 0.4s;
+  font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+}
+
 /* .info {
   padding: 120px 0;
 }

@@ -1,4 +1,4 @@
-new Swiper('.project-swiper', {
+new Swiper(".project-swiper", {
   loop: true,
   spaceBetween: 20,
   slidesPerView: 3.2,
@@ -6,30 +6,69 @@ new Swiper('.project-swiper', {
     // when window width is >= 0px
     0: {
       slidesPerView: 1,
-      spaceBetween: 30
+      spaceBetween: 30,
     },
     425: {
       slidesPerView: 2,
-      spaceBetween: 20
+      spaceBetween: 20,
     },
     725: {
       slidesPerView: 3,
-      spaceBetween: 20
-    }
+      spaceBetween: 20,
+    },
   },
   autoplay: {
     delay: 3000,
-  },});
-
-
+  },
+});
 
 $(document).ready(function () {
+  // открытие попапа
+
+  $(".popup").magnificPopup({
+    type: "inline",
+  });
+
+  //скрытие навигации при клике на поиск в хедере
+  $(".header-main__form").on("click", function () {
+    if ($(window).width() > 769) {
+      $(".nav-menu").toggleClass("nav-menu-hide");
+      $(".header-main__form").addClass("active");
+    }
+  });
+
+  //скрытие поиска при нажатиии на close
+  $(".header-close-img").on("click", function (e) {
+    e.stopImmediatePropagation();
+    $(".nav-menu").removeClass("nav-menu-hide");
+    $(".header-main__form").removeClass("active");
+  });
+
+  // $('.header-main__form').on('click', function(){
+  //   $(".nav-menu").toggleClass("nav-menu-hide");
+  // });
+
+  // скрытие блока меню навигации при клике вне
+  $(document).on("mouseup", function (e) {
+    // При нажатии на документ
+    let hide = $(".nav-menu.nav-menu-hide"); // берём .block.-active
+    let show = $(".header-main__form.active"); // берём .block.-active
+
+    if (!hide.is(e.target) && hide.has(e.target).length === 0) {
+      // Если нажат не он и не его дочернии И сам он существует
+      hide.removeClass("nav-menu-hide"); // То удаляем у него класс .active
+    }
+
+    if (!show.is(e.target) && show.has(e.target).length === 0) {
+      // Если нажат не он и не его дочернии И сам он существует
+      show.removeClass("active"); // То удаляем у него класс .active
+    }
+  });
+
   // переменные
   let scrollPos = 0;
   let menu = $(".nav-menu"),
     menuHeight = menu.outerHeight();
-
-
 
   //скрытие и отображение блока header при скролле
   $(window).scroll(function () {
@@ -54,14 +93,6 @@ $(document).ready(function () {
       }
     }
   });
-
-
-
-  // открытие попапа
-
-  $('.popup').magnificPopup({
-    type: 'inline'
-});
 
   // скрытие блока меню навигации при клике вне
   $(document).mouseup(function (e) {

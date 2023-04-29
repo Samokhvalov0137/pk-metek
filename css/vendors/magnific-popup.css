@@ -128,8 +128,8 @@ button::-moz-focus-inner {
   height: 44px;
   line-height: 44px;
   position: absolute;
-  right: 0;
-  top: 0;
+  right: 20px;
+  top: 20px!important;
   text-decoration: none;
   text-align: center;
   opacity: 0.65;
@@ -336,6 +336,17 @@ img.mfp-img {
     position: fixed;
     text-align: center;
     padding: 0; } }
+
+    .mfp-close::before, .mfp-close::after {
+      content: "";
+      width: 32px;
+      height: 32px;
+      border-radius: 1px;
+      background: #AAAAAA!important;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+  }
 
 @media all and (max-width: 900px) {
   .mfp-arrow {

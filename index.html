@@ -62,14 +62,19 @@
             </nav>
             <div class="header-main__btn">
               <form class="header-main__form">
+                <label>поиск</label>
                 <input
                   class="header-search-input"
-                  placeholder="Поиск"
+                  placeholder="введите запрос и нажмите enter..."
                   type="text"
                 />
                 <div class="header-search-img">
                   <img src="/img/search.svg" alt="search" />
                 </div>
+                <div class="header-close-img">
+                  <img src="/img/close.svg" alt="close" />
+                </div>
+                
               </form>
             </div>
           </div>
@@ -354,7 +359,7 @@
             </div>
           </div>
           <div class="project-btn">
-            <a href="#callback" class="popup btn goto btn--callback"
+            <a href="#" class="popup btn goto btn--callback"
               >смотреть все проекты</a
             >
           </div>
@@ -388,7 +393,7 @@
             <div class="about-left-bottom">
               <p class="about-cooperation">Сотрудничаем с физическими и юридическими лицами</p>
               <div class="about-btn">
-                <a href="#callback" class="popup btn goto btn--callback">подробнее о заводе</a>
+                <a href="#" class="popup btn goto btn--callback">подробнее о заводе</a>
               </div>
             </div>
           </div>
@@ -507,23 +512,31 @@
 
                     
           <div class="textbox popup-textarea">
-            <textarea class="popup-input"></textarea>
+            <textarea class="popup-input focus-input"></textarea>
             <label>Комментарий</label>
           </div>
 
 
-          <div class="f-group">
+          <div class="form-check">
               <label class="check">
                   <input class="check__input" type="checkbox" name="pdn" id="pdn_m" required><span class="check__label">
-                      Я соглашаюсь на обработку моих
+                    Разрешить обработку
                       <a href="#">персональных данных</a> </span>
               </label>
           </div>
-          <button class="btn btn--active btn--block" type="submit">Отправить</button>
+
+          <div class="popup-btn">
+            <button class="btn" type="submit"
+              >Отправить</button>
+          </div>
+
+          <!-- <button class="btn btn--active btn--block" type="submit">Отправить</button> -->
       </form>
 
     </div>
 
+
+    
 
     <script src="./js/vendor/jquery-3.1.1.min.js"></script>
     <script src="./js/vendor/jquery.inputmask.min.js"></script>

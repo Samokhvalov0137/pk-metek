@@ -11,8 +11,9 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header>
-      <div class="header-top">
+    <header class="header">
+      <div class="header-container">
+              <div class="header-top">
         <div class="container">
           <div class="header-main">
             <div class="header-main__left">
@@ -79,6 +80,59 @@
             </div>
           </div>
         </div>
+      </div>
+      </div>
+
+      <div class="header-fix">
+          <div class="container">
+            <div class="header-main">
+              <div class="header-main__left fixed-left">
+                <a href="#" class="logo logo-fix">
+                  <img class="logo-img" src="/img/logo-fix.svg" alt="logo" />
+                </a>
+
+                <nav class="nav-menu">
+                  <a href="#services" class="nav-menu__link goto">О компании</a>
+                  <a href="#about" class="nav-menu__link goto">Продукция</a>
+                  <a href="#stages" class="nav-menu__link goto">Услуги</a>
+                  <a href="#stages" class="nav-menu__link goto">Проекты</a>
+                  <a href="#contact" class="nav-menu__link goto">Контакты</a>
+                </nav>
+
+                <div class="header-main__btn">
+                  <form class="header-main__form fixed">
+                    <input
+                      class="header-search-input"
+                      placeholder="введите запрос и нажмите enter..."
+                      type="text"
+                    />
+                    <div class="header-search-img">
+                      <img src="/img/search-black.svg" alt="search" />
+                    </div>
+                    <div class="header-close-img">
+                      <img src="/img/close-black.svg" alt="close" />
+                    </div>
+                    
+                  </form>
+                </div>
+              </div>
+  
+              <div class="fixed-right">
+                <div class="header-main__phones">
+                  <a class="main-phone header-main-links" href="tel:+73952500070"
+                    >+7 (3952) 50-00-70</a
+                  >
+                  <p class="main-description">Будни с 09:00 до 18:00</p>
+                </div>
+
+                <div class="header-main__btn fixed">
+                  <a href="#callback" class="popup btn goto btn--callback"
+                    >Заказать звонок</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
       </div>
     </header>
 

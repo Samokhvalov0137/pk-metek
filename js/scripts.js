@@ -44,9 +44,6 @@ $(document).ready(function () {
     $(".header-main__form").removeClass("active");
   });
 
-  // $('.header-main__form').on('click', function(){
-  //   $(".nav-menu").toggleClass("nav-menu-hide");
-  // });
 
   // скрытие блока меню навигации при клике вне
   $(document).on("mouseup", function (e) {
@@ -65,35 +62,38 @@ $(document).ready(function () {
     }
   });
 
+
+
   // переменные
   let scrollPos = 0;
   let menu = $(".nav-menu"),
     menuHeight = menu.outerHeight();
 
-  //скрытие и отображение блока header при скролле
+  // //скрытие и отображение блока header при скролле
   $(window).scroll(function () {
-    let height_mh = $(".header").outerHeight();
+    let height_mh = $(".header-fix").outerHeight();
 
     if ($(window).width() > 319) {
       if ($(this).scrollTop() > height_mh) {
         var st = $(this).scrollTop();
         if (st > scrollPos) {
           // down
-          $(".header").removeClass("fix");
-          $(".header").css("padding-top", 0);
+          $(".header-fix").removeClass("fix");
+          $(".header-fix").css("padding-top", 0);
         } else {
           // up
-          $(".header").addClass("fix");
-          $(".header").css("padding-top", "px");
+          $(".header-fix").addClass("fix");
+          $(".header-fix").css("padding-top", "px");
         }
         scrollPos = st;
       } else {
-        $(".header").removeClass("fix");
-        $(".header").css("padding-top", 0);
+        $(".header-fix").removeClass("fix");
+        $(".header-fix").css("padding-top", 0);
       }
     }
   });
 
+  
   // скрытие блока меню навигации при клике вне
   $(document).mouseup(function (e) {
     if ($(window).width() <= 769) {

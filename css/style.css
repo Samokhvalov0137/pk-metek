@@ -1,35 +1,35 @@
 @font-face {
   font-family: "Inter";
   font-weight: 400;
-  src: url("/fonts/Inter-Regular.woff") format("woff"),
-    url("/fonts/Inter-Regular.woff2") format("woff2");
+  src: url("../fonts/Inter-Regular.woff") format("woff"),
+    url("../fonts/Inter-Regular.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "Inter";
   font-weight: 500;
-  src: url("/fonts/Inter-Medium.woff") format("woff"),
-    url("/fonts/Inter-Medium.woff2") format("woff2");
+  src: url("../fonts/Inter-Medium.woff") format("woff"),
+    url("../fonts/Inter-Medium.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "Inter";
   font-weight: 600;
-  src: url("/fonts/Inter-SemiBold.woff") format("woff"),
-    url("/fonts/Inter-SemiBold.woff2") format("woff2");
+  src: url("../fonts/Inter-SemiBold.woff") format("woff"),
+    url("../fonts/Inter-SemiBold.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "Inter";
   font-weight: 700;
-  src: url("/fonts/Inter-Bold.woff") format("woff"),
-    url("/fonts/Inter-Bold.woff2") format("woff2");
+  src: url("../fonts/Inter-Bold.woff") format("woff"),
+    url("../fonts/Inter-Bold.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "Soniano Sans Unicode";
   font-weight: 400;
-  src: url("/fonts/Soniano-Sans-Unicode-Regular.woff") format("woff");
+  src: url("../fonts/Soniano-Sans-Unicode-Regular.woff") format("woff");
 }
 
 * {
@@ -1104,13 +1104,13 @@ border: 1px solid #000000;
 
 
 .about-btn .btn::after{
-content: url('/img/arrow-up.svg');
+content: url('../img/arrow-up.svg');
 position: relative;
 left: 55px;
 }
 
 .about-btn:hover .btn::after{
-  content: url('/img/arrow-up-white.svg');
+  content: url('../img/arrow-up-white.svg');
 }
 
 .parter-link{
@@ -1172,13 +1172,13 @@ margin: 5.5px 0 25px;
 }
 
 .calculation-btn .btn::after{
-  content: url('/img/arrow-up-white.svg');
+  content: url('../img/arrow-up-white.svg');
   position: relative;
   left: 25px;
   }
   
   .calculation-btn:hover .btn::after{
-    content: url('/img/arrow-up.svg');
+    content: url('../img/arrow-up.svg');
   }
 
 
@@ -2195,7 +2195,7 @@ cursor: pointer;
 }
 
 .footer-btn .btn::after{
-  content: url('/img/btn-up.svg');
+  content: url('../img/btn-up.svg');
   position: relative;
   left: 55px;
   width: 24px;
@@ -2212,14 +2212,14 @@ cursor: pointer;
   }
   
   .footer-btn .btn::after{
-    content: url('/img/btn-up.svg');
+    content: url('../img/btn-up.svg');
     position: relative;
     left: 100px;
     top: 1.5px;
     }
     
     .footer-btn:hover .btn::after{
-      content: url('/img/btn-up.svg');
+      content: url('../img/btn-up.svg');
     }
 
     .header-fix{

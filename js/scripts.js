@@ -5,15 +5,39 @@ new Swiper(".project-swiper", {
   breakpoints: {
     // when window width is >= 0px
     0: {
-      slidesPerView: 1,
+      slidesPerView: 1.2,
       spaceBetween: 30,
     },
     425: {
-      slidesPerView: 2,
+      slidesPerView: 2.2,
       spaceBetween: 20,
     },
     725: {
       slidesPerView: 3,
+      spaceBetween: 20,
+    },
+  },
+  autoplay: {
+    delay: 3000,
+  },
+});
+
+new Swiper(".product-mobile-swiper", {
+  loop: true,
+  spaceBetween: 20,
+  slidesPerView: 3.2,
+  breakpoints: {
+    // when window width is >= 0px
+    0: {
+      slidesPerView: 1.2,
+      spaceBetween: 30,
+    },
+    425: {
+      slidesPerView: 1.2,
+      spaceBetween: 20,
+    },
+    725: {
+      slidesPerView: 3.2,
       spaceBetween: 20,
     },
   },
@@ -28,6 +52,15 @@ $(document).ready(function () {
   $(".popup").magnificPopup({
     type: "inline",
   });
+
+
+    //функция появление и скрытия бургер меню
+    $(".menu-btn").on("click", function (e) {
+      e.stopImmediatePropagation();
+      $(this).toggleClass("active");
+      $(".header-main__nav").slideToggle();
+    });
+
 
   //скрытие навигации при клике на поиск в хедере
   $(".header-main__form").on("click", function () {
@@ -93,67 +126,35 @@ $(document).ready(function () {
     }
   });
 
-  
-  // скрытие блока меню навигации при клике вне
-  $(document).mouseup(function (e) {
-    if ($(window).width() <= 769) {
-      let mainMenuBtn = $(".menu-btn");
-      let mainMenu = $(".header-main__nav");
 
-      if (
-        !mainMenuBtn.is(e.target) &&
-        mainMenuBtn.has(e.target).length === 0 &&
-        !mainMenu.is(e.target) &&
-        mainMenu.has(e.target).length === 0
-      ) {
-        mainMenu.slideUp(300);
-        mainMenuBtn.removeClass("active");
-      }
-    }
-  });
+  if ($(window).width() <= 769) {
+      $('.services-title').after($('.services-elements'));
+  };
 
-  //функция появление и скрытия бургер меню
-  $(".menu-btn").on("click", function () {
-    $(this).toggleClass("active");
-    $(".header-main__nav").slideToggle();
-  });
+  if ($(window).width() <= 769) {
+    $('.parter-link').after($('.about-left-bottom'));
+};
 
-  //скрытие бургер меню при нажатии на ссылки в нем
-  $(".nav-menu__link").on("click", function () {
-    if ($(window).width() <= 769) {
-      $(".header-main__nav").slideToggle();
-      $(".menu-btn").toggleClass("active");
-    }
-  });
+  // $('.services-term').after($('.services-description'));
 
-  //подсвечивание ссылок, при нахождении окна на нужном блоке
-  $(window).on("scroll", function () {
-    let curPos = $(this).scrollTop();
-    menu.find(".nav-menu__link").removeClass("active-link");
-    $("#services, #about, #stages, #contact").each(function () {
-      let top = $(this).offset().top - menuHeight,
-        bottom = top + $(this).outerHeight();
-      if (curPos >= top && curPos <= bottom) {
-        menu.find(".nav-menu__link").removeClass("active-link");
-        menu
-          .find('.nav-menu__link[href="#' + $(this).attr("id") + '"]')
-          .addClass("active-link");
-      }
-    });
-  });
+  // // скрытие блока меню навигации при клике вне
+  // $(document).mouseup(function (e) {
+  //   if ($(window).width() <= 769) {
+  //     let mainMenuBtn = $(".menu-btn");
+  //     let mainMenu = $(".header-main__nav");
 
-  //плавный скролл до блока при нажатии на ссылки
-  $(".goto").click(function () {
-    let height_mh = $(".header-main").height();
-    let scroll_el = $(this).attr("href");
-    if ($(scroll_el).length != 0) {
-      $("html, body").animate(
-        { scrollTop: $(scroll_el).offset().top - height_mh / 2 },
-        500
-      );
-    }
-    return false;
-  });
+  //     if (
+  //       !mainMenuBtn.is(e.target) &&
+  //       mainMenuBtn.has(e.target).length === 0 &&
+  //       !mainMenu.is(e.target) &&
+  //       mainMenu.has(e.target).length === 0
+  //     ) {
+  //       mainMenu.slideUp(300);
+  //       mainMenuBtn.removeClass("active");
+  //     }
+  //   }
+  // });
+
 
   //маска на инпут номера телефона
   $(".phone-mask").inputmask("+7 (999) 999-99-99", { showMaskOnHover: false });

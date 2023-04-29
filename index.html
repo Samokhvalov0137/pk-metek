@@ -20,9 +20,22 @@
               <a href="#" class="logo">
                 <img class="logo-img" src="/img/logo.svg" alt="logo" />
               </a>
+
+<div class="mobile-header">
+  <div class="mobile-header-icons">
+    <div class="mobile-icon"><a href="mailto:info@zavod-metek.ru"><img src="/img/mail.svg" alt="mail"></a></div>
+    <div class="mobile-icon"><a href="tel:+73952500070"><img src="/img/phone.svg" alt="mail"></a></div>
+    <div class="mobile-icon">      <input class="menu-btn" type="checkbox" id="menu-btn" />
+              <label class="menu-icon" for="menu-btn">
+                <span class="navicon"></span>
+              </label></div>
+  </div>
+</div>
+        
+
               <div class="header-main__description">
                 <p>Обработка листового металла</p>
-                <a href="https://yandex.ru/maps/org/metek/221744886639/?ll=104.210718%2C52.275891&z=16.59">Иркутск, ул. Ракитная, 22</p>
+                <a href="https://yandex.ru/maps/org/metek/221744886639/?ll=104.210718%2C52.275891&z=16.59">Иркутск, ул. Ракитная, 22</a>
               </div>
             </div>
 
@@ -54,7 +67,7 @@
       <div class="header-bottom">
         <div class="container">
           <div class="header-main__nav">
-            <nav class="nav-menu">
+            <nav class="nav-menu mobile-nav-menu">
               <a href="#services" class="nav-menu__link goto">О компании</a>
               <a href="#about" class="nav-menu__link goto">Продукция</a>
               <a href="#stages" class="nav-menu__link goto">Услуги</a>
@@ -69,6 +82,11 @@
                   placeholder="введите запрос и нажмите enter..."
                   type="text"
                 />
+                <input
+                class="header-search-input mobile-search"
+                placeholder="поиск"
+                type="text"
+              />
                 <div class="header-search-img">
                   <img src="/img/search.svg" alt="search" />
                 </div>
@@ -85,11 +103,12 @@
 
       <div class="header-fix">
           <div class="container">
-            <div class="header-main">
+            <div class="header-main fixed-header-main">
               <div class="header-main__left fixed-left">
                 <a href="#" class="logo logo-fix">
                   <img class="logo-img" src="/img/logo-fix.svg" alt="logo" />
                 </a>
+
 
                 <nav class="nav-menu">
                   <a href="#services" class="nav-menu__link goto">О компании</a>
@@ -205,69 +224,138 @@
               </p>
             </div>
           </div>
-          <div class="product-elements">
-            <div class="product-element">
-              <a class="product-link" href="#">
-                <img src="/img/product1.png" alt="Фасадные системы" />
-                <p class="product-element-text">Фасадные системы</p>
-              </a>
+          <div class="product-elements product-desktop-view">
+                <div class="product-element">
+                  <a class="product-link" href="#">
+                    <img src="/img/product1.png" alt="Фасадные системы" />
+                    <p class="product-element-text">Фасадные системы</p>
+                  </a>
+                </div>
+                <div class="product-element">
+                  <a class="product-link" href="#">
+                    <img src="/img/product2.png" alt="Кровельные системы" />
+                    <p class="product-element-text">Кровельные системы</p>
+                  </a>
+                </div>
+                <div class="product-element">
+                  <a class="product-link" href="#">
+                    <img src="/img/product3.png" alt="Системы вентиляции" />
+                    <p class="product-element-text">Системы вентиляции</p>
+                  </a>
+                </div>
+                <div class="product-element">
+                  <a class="product-link" href="#">
+                    <img src="/img/product4.png" alt="Корпусные изделия" />
+                    <p class="product-element-text">Корпусные изделия</p>
+                  </a>
+                </div>
+                <div class="product-element">
+                  <a class="product-link" href="#">
+                    <img src="/img/product5.png" alt="Водосточные системы" />
+                    <p class="product-element-text">Водосточные системы</p>
+                  </a>
+                </div>
+                <div class="product-element">
+                  <a class="product-link" href="#">
+                    <img src="/img/product6.png" alt="Перфорированные листы" />
+                    <p class="product-element-text">Перфорированные листы</p>
+                  </a>
+                </div>
+    
+                <div class="product-element">
+                  <a class="product-link" href="#">
+                    <img src="/img/product7.png" alt="Корзины для кондиционеров" />
+                    <p class="product-element-text">Корзины для кондиционеров</p>
+                  </a>
+                </div>
+    
+                <div class="product-element">
+                  <a class="product-link" href="#">
+                    <img src="/img/product8.png" alt="Грядки" />
+                    <p class="product-element-text">Грядки</p>
+                  </a>
+                </div>
+                <div class="product-element">
+                  <a class="product-link" href="#">
+                    <img src="/img/product9.png" alt="Флюгарки и зонты" />
+                    <p class="product-element-text">Флюгарки и зонты</p>
+                  </a>
+                </div>
+                <div class="product-element">
+                  <a class="product-link" href="#">
+                    <img src="/img/product10.png" alt="Лифтовые обрамления" />
+                    <p class="product-element-text">Лифтовые обрамления</p>
+                  </a>
+                </div>
+          </div>
+          <div class="product-elements product-mobile-swiper">
+            <div class="swiper-wrapper product-mobile-wrapper">
+              <div class="product-element swiper-slide">
+                <a class="product-link" href="#">
+                  <img src="/img/product1.png" alt="Фасадные системы" />
+                  <p class="product-element-text">Фасадные системы</p>
+                </a>
+              </div>
+              <div class="product-element swiper-slide">
+                <a class="product-link" href="#">
+                  <img src="/img/product2.png" alt="Кровельные системы" />
+                  <p class="product-element-text">Кровельные системы</p>
+                </a>
+              </div>
+              <div class="product-element swiper-slide">
+                <a class="product-link" href="#">
+                  <img src="/img/product3.png" alt="Системы вентиляции" />
+                  <p class="product-element-text">Системы вентиляции</p>
+                </a>
+              </div>
+              <div class="product-element swiper-slide">
+                <a class="product-link" href="#">
+                  <img src="/img/product4.png" alt="Корпусные изделия" />
+                  <p class="product-element-text">Корпусные изделия</p>
+                </a>
+              </div>
+              <div class="product-element swiper-slide">
+                <a class="product-link" href="#">
+                  <img src="/img/product5.png" alt="Водосточные системы" />
+                  <p class="product-element-text">Водосточные системы</p>
+                </a>
+              </div>
+              <div class="product-element swiper-slide">
+                <a class="product-link" href="#">
+                  <img src="/img/product6.png" alt="Перфорированные листы" />
+                  <p class="product-element-text">Перфорированные листы</p>
+                </a>
+              </div>
+  
+              <div class="product-element swiper-slide">
+                <a class="product-link" href="#">
+                  <img src="/img/product7.png" alt="Корзины для кондиционеров" />
+                  <p class="product-element-text">Корзины для кондиционеров</p>
+                </a>
+              </div>
+  
+              <div class="product-element swiper-slide">
+                <a class="product-link" href="#">
+                  <img src="/img/product8.png" alt="Грядки" />
+                  <p class="product-element-text">Грядки</p>
+                </a>
+              </div>
+              <div class="product-element swiper-slide">
+                <a class="product-link" href="#">
+                  <img src="/img/product9.png" alt="Флюгарки и зонты" />
+                  <p class="product-element-text">Флюгарки и зонты</p>
+                </a>
+              </div>
+              <div class="product-element swiper-slide">
+                <a class="product-link" href="#">
+                  <img src="/img/product10.png" alt="Лифтовые обрамления" />
+                  <p class="product-element-text">Лифтовые обрамления</p>
+                </a>
+              </div>
             </div>
-            <div class="product-element">
-              <a class="product-link" href="#">
-                <img src="/img/product2.png" alt="Кровельные системы" />
-                <p class="product-element-text">Кровельные системы</p>
-              </a>
-            </div>
-            <div class="product-element">
-              <a class="product-link" href="#">
-                <img src="/img/product3.png" alt="Системы вентиляции" />
-                <p class="product-element-text">Системы вентиляции</p>
-              </a>
-            </div>
-            <div class="product-element">
-              <a class="product-link" href="#">
-                <img src="/img/product4.png" alt="Корпусные изделия" />
-                <p class="product-element-text">Корпусные изделия</p>
-              </a>
-            </div>
-            <div class="product-element">
-              <a class="product-link" href="#">
-                <img src="/img/product5.png" alt="Водосточные системы" />
-                <p class="product-element-text">Водосточные системы</p>
-              </a>
-            </div>
-            <div class="product-element">
-              <a class="product-link" href="#">
-                <img src="/img/product6.png" alt="Перфорированные листы" />
-                <p class="product-element-text">Перфорированные листы</p>
-              </a>
-            </div>
+          </div>
 
-            <div class="product-element">
-              <a class="product-link" href="#">
-                <img src="/img/product7.png" alt="Корзины для кондиционеров" />
-                <p class="product-element-text">Корзины для кондиционеров</p>
-              </a>
-            </div>
-
-            <div class="product-element">
-              <a class="product-link" href="#">
-                <img src="/img/product8.png" alt="Грядки" />
-                <p class="product-element-text">Грядки</p>
-              </a>
-            </div>
-            <div class="product-element">
-              <a class="product-link" href="#">
-                <img src="/img/product9.png" alt="Флюгарки и зонты" />
-                <p class="product-element-text">Флюгарки и зонты</p>
-              </a>
-            </div>
-            <div class="product-element">
-              <a class="product-link" href="#">
-                <img src="/img/product10.png" alt="Лифтовые обрамления" />
-                <p class="product-element-text">Лифтовые обрамления</p>
-              </a>
-            </div>
+            
           </div>
         </div>
       </section>
@@ -295,6 +383,12 @@
           <div class="services-bottom">
             <div class="services-img">
               <img src="/img/3layer.svg" alt="cube" />
+            </div>
+
+            <div class="services-btn">
+              <a href="#callback" class="popup btn goto btn--callback"
+                >оставить заявку</a
+              >
             </div>
             <ul class="services-elements">
               <li>
@@ -513,6 +607,12 @@
           <div class="map-content">
             <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A13beda2405da1907cd980169f05ca11fea1356f855bcccbc8a686aff5fad1c1f&amp;width=626&amp;height=448&amp;lang=ru_RU&amp;scroll=false"></script>
           </div>
+
+          <div class="map-btn">
+            <a href="https://yandex.ru/maps/org/metek/221744886639/?ll=104.210718%2C52.275891&z=16.59" target="_blank" class="btn btn--callback"
+              >смотреть на карте</a
+            >
+          </div>
         </div>
       </section>
     </main>
@@ -544,6 +644,10 @@
         </div>
         </div>
         
+        <div class="footer-btn">
+          <a href="#" class="btn btn--callback">наверх</a>
+        </div>
+
       </div>
 
     </footer>
